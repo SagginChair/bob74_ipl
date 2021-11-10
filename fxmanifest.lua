@@ -74,7 +74,6 @@ client_scripts {
 
 	-- DLC Bikers
 	, "dlc_bikers/cocaine.lua"
-	, "dlc_bikers/counterfeit_cash.lua"
 	, "dlc_bikers/document_forgery.lua"
 	, "dlc_bikers/meth.lua"
 	, "dlc_bikers/weed.lua"
@@ -87,7 +86,6 @@ client_scripts {
 	, "dlc_import/garage2.lua"
 	, "dlc_import/garage3.lua"
 	, "dlc_import/garage4.lua"
-	, "dlc_import/vehicle_warehouse.lua"
 
 	-- DLC Gunrunning
 	, "dlc_gunrunning/bunkers.lua"
@@ -101,8 +99,4 @@ client_scripts {
 
 	-- DLC After Hours
 	, "dlc_afterhours/nightclubs.lua"
-	
-	-- DLC Diamond Casino (Requires forced build 2060 or higher)
-	, "dlc_casino/casino.lua"
-	, "dlc_casino/penthouse.lua"
 }

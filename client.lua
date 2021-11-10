@@ -26,7 +26,7 @@ Citizen.CreateThread(function()
     BahamaMamas.Enable(true)
 
     -- Pillbox hospital: 307.1680, -590.807, 43.280
-    PillboxHospital.Enable(true)
+    PillboxHospital.Enable(false)
 
     -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
     ZancudoGates.LoadDefault()
@@ -100,7 +100,6 @@ Citizen.CreateThread(function()
     -- =-------------------------- [DLC: Bikers] -------------------------=
     -- ====================================================================
     BikerCocaine.LoadDefault()	        -- Cocaine lockup: 1093.6, -3196.6, -38.99841
-    BikerCounterfeit.LoadDefault()      -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
     BikerDocumentForgery.LoadDefault()  -- Document forgery: 1165, -3196.6, -39.01306
     BikerMethLab.LoadDefault()          -- Meth lab: 1009.5, -3196.6, -38.99682
     BikerWeedFarm.LoadDefault()         -- Weed farm: 1051.491, -3196.536, -39.14842
@@ -114,7 +113,6 @@ Citizen.CreateThread(function()
     ImportCEOGarage2.LoadDefault()             -- Maze Bank Building               /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
     ImportCEOGarage3.LoadDefault()             -- Lom Bank                         /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
     ImportCEOGarage4.LoadDefault()             -- Maze Bank West                   /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
-    ImportVehicleWarehouse.LoadDefault()       -- Vehicle warehouse: 994.5925, -3002.594, -39.64699
 
     -- ====================================================================
     -- =------------------------ [DLC: Gunrunning] -----------------------=
@@ -130,7 +128,7 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =-------------------- [DLC: The Doomsday Heist] -------------------=
     -- ====================================================================
-    DoomsdayFacility.LoadDefault()
+    DoomsdayFacility.LoadDefault(true)
 
     -- ====================================================================
     -- =----------------------- [DLC: After Hours] -----------------------=
@@ -140,9 +138,7 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =------------------- [DLC: Diamond Casino Resort] -----------------=
     -- ====================================================================
-    if GetGameBuildNumber() >= 2060 then
-        DiamondCasino.LoadDefault()                -- 1100.000, 220.000, -50.000
-        DiamondPenthouse.LoadDefault()             -- 976.636, 70.295, 115.164
-    end
+    if GetGameBuildNumber() >= 2060 then           -- 976.636, 70.295, 115.164
+  end
 end)
 

@@ -108,8 +108,8 @@ GunrunningBunker = {
     },
 
     LoadDefault = function()
-        GunrunningBunker.Ipl.Interior.Load()
-        GunrunningBunker.Ipl.Exterior.Load()
+        GunrunningBunker.Ipl.Interior.Load(true)
+        GunrunningBunker.Ipl.Exterior.Load(true)
 
         GunrunningBunker.Style.Set(GunrunningBunker.Style.default)
         GunrunningBunker.Tier.Set(GunrunningBunker.Tier.default)

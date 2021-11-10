@@ -270,8 +270,8 @@ DoomsdayFacility = {
     },
 
     LoadDefault = function()
-        DoomsdayFacility.Ipl.Exterior.Load()
-        DoomsdayFacility.Ipl.Interior.Load()
+        DoomsdayFacility.Ipl.Exterior.Load(true)
+        DoomsdayFacility.Ipl.Interior.Load(true)
         
         DoomsdayFacility.Walls.SetColor(DoomsdayFacility.Colors.utility)
         DoomsdayFacility.Decals.Set(DoomsdayFacility.Decals.style01)
